@@ -69,6 +69,7 @@
 	width: 100% !important;
 }
 
+
 .position-static {
 	position: static;
 }
@@ -87,5 +88,9 @@
 
 
 .mat-dialog-container {
+  padding: 0 !important;
+}
+
+.myapp-no-padding-dialog .mat-dialog-container{
   padding: 0 !important;
 }

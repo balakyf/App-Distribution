@@ -39,6 +39,7 @@ import { RolesComponent } from './roles/roles.component';
 import { ModemsComponent } from './modems/modems.component';
 import { MasterComponent } from './master/master.component';
 import { PopupAddComponent } from './master/popup-add/popup-add.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 // Partials
 
@@ -82,7 +83,7 @@ import { PopupAddComponent } from './master/popup-add/popup-add.component';
     MatListModule,
     MatInputModule,
     PerfectScrollbarModule,
-
+    FlexLayoutModule,
     // tslint:disable-next-line: deprecation
     NgbNavModule,
 		NgbTooltipModule

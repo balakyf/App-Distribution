@@ -31,7 +31,12 @@ export class MasterComponent implements OnInit {
   }
 
   openDialog() {
-    const dialogRef = this.dialog.open(PopupAddComponent);
+    const dialogRef = this.dialog.open(PopupAddComponent,{
+        width: '800px',
+        height:'400px',
+        disableClose: true,
+        panelClass: 'myapp-no-padding-dialog'
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);

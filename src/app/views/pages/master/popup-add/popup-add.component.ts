@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'kt-popup-add',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PopupAddComponent implements OnInit {
 
-  constructor() { }
+  titre:string='Masters';
+  butValue='Créer';
+  constructor(public dialogRef: MatDialogRef<PopupAddComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   ngOnInit(): void {
   }
-
+  close() {
+    this.dialogRef.close({ result: 0 });
+  }
 }

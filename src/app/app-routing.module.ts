@@ -20,6 +20,7 @@ import { RechargeComponent } from './views/pages/recharge/recharge.component';
 import { RolesComponent } from './views/pages/roles/roles.component';
 import { UserComponent } from './views/pages/user/user.component';
 import { MasterComponent } from './views/pages/master/master.component';
+import { PopupAddComponent } from './views/pages/master/popup-add/popup-add.component';
 
 const routes: Routes = [
   {path: 'auth', loadChildren: () => import('./views/pages/auth/auth.module').then(m => m.AuthModule)},
@@ -85,6 +86,10 @@ const routes: Routes = [
       {
         path: 'master', // <= Page URL
         component: MasterComponent // <= Page component registration
+      },
+      {
+        path: 'popup-add', // <= Page URL
+        component: PopupAddComponent // <= Page component registration
       },
       {
         path: 'dashboard',

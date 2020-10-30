@@ -16,11 +16,13 @@ import { ConfigurationComponent } from './configuration/configuration.component'
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { MatStepperModule } from '@angular/material/stepper';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
+import {MatTableModule} from '@angular/material/table';
 // NgBootstrap
 import { NgbNavModule, NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 // Perfect Scrollbar
@@ -36,6 +38,7 @@ import { UserComponent } from './user/user.component';
 import { RolesComponent } from './roles/roles.component';
 import { ModemsComponent } from './modems/modems.component';
 import { MasterComponent } from './master/master.component';
+import { PopupAddComponent } from './master/popup-add/popup-add.component';
 
 // Partials
 
@@ -55,10 +58,13 @@ import { MasterComponent } from './master/master.component';
     UserComponent,
     RolesComponent,
     ModemsComponent,
-    MasterComponent],
+    MasterComponent,
+    PopupAddComponent],
   exports: [],
   imports: [
     MatIconModule,
+    MatDialogModule,
+    MatTableModule,
     MatDividerModule,
     CommonModule,
     HttpClientModule,

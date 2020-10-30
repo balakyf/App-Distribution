@@ -420,16 +420,20 @@ export class MenuConfig {
           page: '/approvisionner'
         },
         {
-          title: 'Utilisateur',
+          title: 'Admin',
           root: true,
           icon: 'flaticon-user',
-          page: '/user'
-        },
-        {
-          title: 'Roles',
-          root: true,
-          icon: 'flaticon-edit-1',
-          page: '/roles'
+          bullet: 'dot',
+          submenu: [
+            {
+              title: 'Utilisateur',
+              page: '/user',
+            },
+            {
+              title: 'Roles',
+              page: '/roles'
+            },
+          ]
         },
         {
           title: 'Configurataion',

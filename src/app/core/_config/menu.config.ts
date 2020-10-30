@@ -376,39 +376,76 @@ export class MenuConfig {
       self: {},
       items: [
         {
-          title: 'Accueil',
+          title: 'Master',
           root: true,
           icon: 'flaticon2-architecture-and-city',
-          page: '/dashboard',
           bullet: 'dot',
+          submenu: [
+            {
+              title: 'Master Distributeur',
+              page: '/master',
+            },
+            {
+              title: 'Info',
+              page: '/info'
+            },
+          ]
         },
         {
-          title: 'Stocks',
+          title: 'Transaction',
           root: true,
           icon: 'flaticon-line-graph',
           bullet: 'dot',
           submenu: [
             {
-              title: 'Ajouter article',
-              page: '/stock',
+              title: 'Recharger Distributeur',
+              page: '/recharge',
             },
             {
-              title: 'Modifier stock',
-              page: '/modifier-stock'
+              title: 'Annuler la transaction',
+              page: '/annuler-trans'
             },
           ]
         },
         {
-          title: 'Produits',
+          title: 'Operation en cours',
           root: true,
-          icon: 'flaticon-business',
-          page: '/produits'
+          icon: 'flaticon-arrows',
+          page: '/operation-en-cours'
         },
         {
-          title: 'Configuration',
+          title: 'approvisionner',
+          root: true,
+          icon: 'flaticon-download',
+          page: '/approvisionner'
+        },
+        {
+          title: 'Utilisateur',
+          root: true,
+          icon: 'flaticon-user',
+          page: '/user'
+        },
+        {
+          title: 'Roles',
+          root: true,
+          icon: 'flaticon-edit-1',
+          page: '/roles'
+        },
+        {
+          title: 'Configurataion',
           root: true,
           icon: 'flaticon-settings',
-          page: '/configuration'
+          bullet: 'dot',
+          submenu: [
+            {
+              title: 'General',
+              page: '/configuration'
+            },
+            {
+              title: 'Modems',
+              page: '/modems'
+            },
+          ]
         },
         {
           title: 'Layout Builder',

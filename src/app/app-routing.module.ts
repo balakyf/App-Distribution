@@ -6,12 +6,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { BaseComponent } from './views/theme/base/base.component';
 // Auth
 import { AuthGuard } from './core/auth';
-import { StockComponent } from './views/pages/stock/stock.component';
 import { ModifierStockComponent } from './views/pages/modifier-stock/modifier-stock.component';
 import { ProduitsComponent } from './views/pages/produits/produits.component';
 import { ConfigurationComponent } from './views/pages/configuration/configuration.component';
 import { SupprimerArticleComponent } from './views/pages/supprimer-article/supprimer-article.component';
 import { ModifierArticleComponent } from './views/pages/modifier-article/modifier-article.component';
+import { AnnulerTransComponent } from './views/pages/annuler-trans/annuler-trans.component';
+import { ApprovisionnerComponent } from './views/pages/approvisionner/approvisionner.component';
+import { InfoComponent } from './views/pages/info/info.component';
+import { ModemsComponent } from './views/pages/modems/modems.component';
+import { OperationEnCoursComponent } from './views/pages/operation-en-cours/operation-en-cours.component';
+import { RechargeComponent } from './views/pages/recharge/recharge.component';
+import { RolesComponent } from './views/pages/roles/roles.component';
+import { UserComponent } from './views/pages/user/user.component';
+import { MasterComponent } from './views/pages/master/master.component';
 
 const routes: Routes = [
   {path: 'auth', loadChildren: () => import('./views/pages/auth/auth.module').then(m => m.AuthModule)},
@@ -22,10 +30,6 @@ const routes: Routes = [
     component: BaseComponent,
     canActivate: [AuthGuard],
     children: [
-      {
-        path: 'stock', // <= Page URL
-        component: StockComponent // <= Page component registration
-      },
       {
         path: 'modifier-stock', // <= Page URL
         component: ModifierStockComponent // <= Page component registration
@@ -45,6 +49,42 @@ const routes: Routes = [
       {
         path: 'modifier-article', // <= Page URL
         component: ModifierArticleComponent // <= Page component registration
+      },
+      {
+        path: 'annuler-trans', // <= Page URL
+        component: AnnulerTransComponent // <= Page component registration
+      },
+      {
+        path: 'approvisionner', // <= Page URL
+        component: ApprovisionnerComponent // <= Page component registration
+      },
+      {
+        path: 'info', // <= Page URL
+        component: InfoComponent // <= Page component registration
+      },
+      {
+        path: 'modems', // <= Page URL
+        component: ModemsComponent // <= Page component registration
+      },
+      {
+        path: 'operation-en-cours', // <= Page URL
+        component: OperationEnCoursComponent // <= Page component registration
+      },
+      {
+        path: 'recharge', // <= Page URL
+        component: RechargeComponent // <= Page component registration
+      },
+      {
+        path: 'roles', // <= Page URL
+        component: RolesComponent // <= Page component registration
+      },
+      {
+        path: 'user', // <= Page URL
+        component: UserComponent // <= Page component registration
+      },
+      {
+        path: 'master', // <= Page URL
+        component: MasterComponent // <= Page component registration
       },
       {
         path: 'dashboard',

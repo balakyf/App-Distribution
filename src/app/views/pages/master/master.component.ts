@@ -12,10 +12,7 @@ export interface PeriodicElement {
   modem: string;
 }
 
-const ELEMENT_DATA: PeriodicElement[] = [
-
-
-];
+const ELEMENT_DATA: PeriodicElement[] = [];
 @Component({
   selector: 'kt-master',
   templateUrl: './master.component.html',
@@ -32,8 +29,8 @@ export class MasterComponent implements OnInit {
 
   openDialog() {
     const dialogRef = this.dialog.open(PopupAddComponent,{
-        width: '800px',
-        height:'400px',
+        width: '1000px',
+        height:'500px',
         disableClose: true,
         panelClass: 'myapp-no-padding-dialog'
     });

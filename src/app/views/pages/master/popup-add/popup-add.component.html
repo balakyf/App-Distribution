@@ -5,10 +5,10 @@
       <mat-divider></mat-divider>
       <div class="vspace"></div>
       <p class="mat-subheading-1">
-        En tout cas, tant que le genjutsu utilise du chakra, ça devrait marcher.
+        Ajouter les informations necessaires pour la creation d'un nouveau compte de Master distributeur.
       </p>
       <span class="center-icon">
-        <mat-icon class="mat-18 ulistration-mat-icon">account_balance</mat-icon>
+        <img src="../../../../../assets/media/png/boss.png">
       </span>
     </div>
   </div>
@@ -19,7 +19,42 @@
           <mat-icon aria-label="icon">clear</mat-icon>
         </span>
       </div>
+      <span class="titre">
+        <h2>Informations du Master distributeur</h2>
+      </span>
       <div class="form-container" fxFlex="98">
+
+        <form>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Prenoms">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nom de famille">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control">
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Nom d'utilisateur">
+            </div>
+            <div class="col">
+              <input type="password" class="form-control" placeholder="Mot de passe">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Numero du modem">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Contact">
+            </div>
+          </div>
+          
+        </form>
        
       </div>
 
@@ -38,7 +73,7 @@
           {{ butValue }}
         </button>
         <button class="action-button" mat-raised-button (click)="close()">
-          Cancel
+          Annuler
         </button>
       </footer>
     </div>

@@ -8,8 +8,8 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class PopupAddComponent implements OnInit {
 
-  titre:string='Masters';
-  butValue='Créer';
+  titre ='Ajouter';
+  butValue='Suivant';
   constructor(public dialogRef: MatDialogRef<PopupAddComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any) { }
 

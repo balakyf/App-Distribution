@@ -21,6 +21,13 @@ import { RolesComponent } from './views/pages/roles/roles.component';
 import { UserComponent } from './views/pages/user/user.component';
 import { MasterComponent } from './views/pages/master/master.component';
 import { PopupAddComponent } from './views/pages/master/popup-add/popup-add.component';
+import { RechargeDialogComponent } from './views/pages/recharge/recharge-dialog/recharge-dialog.component';
+import { AjouterModemComponent } from './views/pages/modems/ajouter-modem/ajouter-modem.component';
+import { ConfigurerModemComponent } from './views/pages/modems/configurer-modem/configurer-modem.component';
+import { ConfigurerSimComponent } from './views/pages/modems/configurer-sim/configurer-sim.component';
+import { EtatModemsComponent } from './views/pages/modems/etat-modems/etat-modems.component';
+import { ModifierModemComponent } from './views/pages/modems/modifier-modem/modifier-modem.component';
+import { RestaurerModemComponent } from './views/pages/modems/restaurer-modem/restaurer-modem.component';
 
 const routes: Routes = [
   {path: 'auth', loadChildren: () => import('./views/pages/auth/auth.module').then(m => m.AuthModule)},
@@ -90,6 +97,34 @@ const routes: Routes = [
       {
         path: 'popup-add', // <= Page URL
         component: PopupAddComponent // <= Page component registration
+      },
+      {
+        path: 'ajouter-modem', // <= Page URL
+        component: AjouterModemComponent // <= Page component registration
+      },
+      {
+        path: 'configurer-modem', // <= Page URL
+        component: ConfigurerModemComponent // <= Page component registration
+      },
+      {
+        path: 'configurer-sim', // <= Page URL
+        component: ConfigurerSimComponent // <= Page component registration
+      },
+      {
+        path: 'etat-modems', // <= Page URL
+        component: EtatModemsComponent // <= Page component registration
+      },
+      {
+        path: 'modifier-modem', // <= Page URL
+        component: ModifierModemComponent // <= Page component registration
+      },
+      {
+        path: 'restaurer-modem', // <= Page URL
+        component: RestaurerModemComponent // <= Page component registration
+      },
+      {
+        path: 'recharge-dialog', // <= Page URL
+        component: RechargeDialogComponent // <= Page component registration
       },
       {
         path: 'dashboard',

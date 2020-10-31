@@ -40,6 +40,13 @@ import { ModemsComponent } from './modems/modems.component';
 import { MasterComponent } from './master/master.component';
 import { PopupAddComponent } from './master/popup-add/popup-add.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { RechargeDialogComponent } from './recharge/recharge-dialog/recharge-dialog.component';
+import { AjouterModemComponent } from './modems/ajouter-modem/ajouter-modem.component';
+import { ModifierModemComponent } from './modems/modifier-modem/modifier-modem.component';
+import { ConfigurerSimComponent } from './modems/configurer-sim/configurer-sim.component';
+import { RestaurerModemComponent } from './modems/restaurer-modem/restaurer-modem.component';
+import { ConfigurerModemComponent } from './modems/configurer-modem/configurer-modem.component';
+import { EtatModemsComponent } from './modems/etat-modems/etat-modems.component';
 
 // Partials
 
@@ -60,8 +67,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     RolesComponent,
     ModemsComponent,
     MasterComponent,
-    PopupAddComponent],
-    entryComponents: [PopupAddComponent],
+    PopupAddComponent,
+    RechargeDialogComponent,
+    AjouterModemComponent,
+    ModifierModemComponent,
+    ConfigurerSimComponent,
+    RestaurerModemComponent,
+    ConfigurerModemComponent,
+    EtatModemsComponent],
+    entryComponents: [PopupAddComponent, RechargeDialogComponent],
   exports: [],
   imports: [
     MatIconModule,

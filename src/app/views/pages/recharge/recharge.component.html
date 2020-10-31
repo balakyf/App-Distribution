@@ -1,20 +1,49 @@
 
-
-  
-<div class="body">
-    <div class="card ">
-        <div class="card-body">
-            <h1>Vers Distributeur</h1>
-            <div class="">
-                <label for="cc-name">Numero du distributeur</label>
-                <input type="number" class="form-control"  formControlName="numeroDistributeur"  placeholder="" required>
-            </div>
-            <div class="">
-                <label for="cc-name">Montant</label>
-                <input type="number" class="form-control"  formControlName="montant"  placeholder="" required>
-            </div>      
-            <br>
-            <button class="btn btn-info" type="submit">Transferer</button>
-        </div>
-    </div>
+<div class="example-button-container">
+  <button mat-raised-button color="primary" (click)="openDialog()">
+    Recharger
+    <mat-icon slot="end" >payments</mat-icon>
+  </button>
 </div>
+
+<div class="titre">
+    <h2>Liste des transactions effectuees</h2>
+</div>
+
+
+<div class="list">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+      <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+    
+      <!-- Position Column -->
+      <ng-container matColumnDef="position">
+        <th mat-header-cell *matHeaderCellDef> No. </th>
+        <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+      </ng-container>
+    
+      <!-- Name Column -->
+      <ng-container matColumnDef="nom">
+        <th mat-header-cell *matHeaderCellDef> Nom </th>
+        <td mat-cell *matCellDef="let element"> {{element.nom}} </td>
+      </ng-container>
+    
+      <!-- Weight Column -->
+      <ng-container matColumnDef="numero">
+        <th mat-header-cell *matHeaderCellDef> Numero </th>
+        <td mat-cell *matCellDef="let element"> {{element.numero}} </td>
+      </ng-container>
+    
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="modem">
+        <th mat-header-cell *matHeaderCellDef> Modem </th>
+        <td mat-cell *matCellDef="let element"> {{element.modem}} </td>
+      </ng-container>
+    
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    
+    
+  </div>

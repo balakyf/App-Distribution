@@ -61,6 +61,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ModemsComponent,
     MasterComponent,
     PopupAddComponent],
+    entryComponents: [PopupAddComponent],
   exports: [],
   imports: [
     MatIconModule,

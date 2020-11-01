@@ -132,7 +132,7 @@ export class RegisterComponent implements OnInit, OnDestroy {
 		if (!controls.agree.value) {
 			// you must agree the terms and condition
 			// checkbox cannot work inside mat-form-field https://github.com/angular/material2/issues/7891
-			this.authNoticeService.setNotice('You must agree the terms and condition', 'danger');
+			this.authNoticeService.setNotice('Vous devez accepter les termes et conditions', 'danger');
 			return;
 		}
 

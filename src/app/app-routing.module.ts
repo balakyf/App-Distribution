@@ -28,6 +28,9 @@ import { ConfigurerSimComponent } from './views/pages/modems/configurer-sim/conf
 import { EtatModemsComponent } from './views/pages/modems/etat-modems/etat-modems.component';
 import { ModifierModemComponent } from './views/pages/modems/modifier-modem/modifier-modem.component';
 import { RestaurerModemComponent } from './views/pages/modems/restaurer-modem/restaurer-modem.component';
+import { PopupEditComponent } from './views/pages/master/popup-edit/popup-edit.component';
+import { PopupDisableComponent } from './views/pages/master/popup-disable/popup-disable.component';
+import { PopupModemComponent } from './views/pages/master/popup-modem/popup-modem.component';
 
 const routes: Routes = [
   {path: 'auth', loadChildren: () => import('./views/pages/auth/auth.module').then(m => m.AuthModule)},
@@ -97,6 +100,18 @@ const routes: Routes = [
       {
         path: 'popup-add', // <= Page URL
         component: PopupAddComponent // <= Page component registration
+      },
+      {
+        path: 'popup-edit', // <= Page URL
+        component: PopupEditComponent // <= Page component registration
+      },
+      {
+        path: 'popup-disable', // <= Page URL
+        component: PopupDisableComponent // <= Page component registration
+      },
+      {
+        path: 'popup-modem', // <= Page URL
+        component: PopupModemComponent // <= Page component registration
       },
       {
         path: 'ajouter-modem', // <= Page URL

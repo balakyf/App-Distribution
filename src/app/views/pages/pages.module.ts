@@ -19,6 +19,7 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -47,6 +48,9 @@ import { ConfigurerSimComponent } from './modems/configurer-sim/configurer-sim.c
 import { RestaurerModemComponent } from './modems/restaurer-modem/restaurer-modem.component';
 import { ConfigurerModemComponent } from './modems/configurer-modem/configurer-modem.component';
 import { EtatModemsComponent } from './modems/etat-modems/etat-modems.component';
+import { PopupEditComponent } from './master/popup-edit/popup-edit.component';
+import { PopupDisableComponent } from './master/popup-disable/popup-disable.component';
+import { PopupModemComponent } from './master/popup-modem/popup-modem.component';
 
 // Partials
 
@@ -74,11 +78,19 @@ import { EtatModemsComponent } from './modems/etat-modems/etat-modems.component'
     ConfigurerSimComponent,
     RestaurerModemComponent,
     ConfigurerModemComponent,
-    EtatModemsComponent],
-    entryComponents: [PopupAddComponent, RechargeDialogComponent],
+    EtatModemsComponent,
+    PopupEditComponent,
+    PopupDisableComponent,
+    PopupModemComponent],
+    entryComponents: [PopupAddComponent,
+    RechargeDialogComponent,
+    PopupEditComponent,
+    PopupDisableComponent,
+    PopupModemComponent],
   exports: [],
   imports: [
     MatIconModule,
+    MatCardModule,
     MatDialogModule,
     MatTableModule,
     MatDividerModule,

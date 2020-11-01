@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 import { PopupAddComponent } from '../master/popup-add/popup-add.component';
+import { PopupDisableComponent } from './popup-disable/popup-disable.component';
+import { PopupEditComponent } from './popup-edit/popup-edit.component';
+import { PopupModemComponent } from './popup-modem/popup-modem.component';
 
 
 
@@ -31,6 +34,45 @@ export class MasterComponent implements OnInit {
     const dialogRef = this.dialog.open(PopupAddComponent,{
         width: '1000px',
         height:'500px',
+        disableClose: true,
+        panelClass: 'myapp-no-padding-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openDialog2() {
+    const dialogRef = this.dialog.open(PopupEditComponent,{
+        width: '1000px',
+        height:'600px',
+        disableClose: true,
+        panelClass: 'myapp-no-padding-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openDialog3() {
+    const dialogRef = this.dialog.open(PopupDisableComponent,{
+        width: ' 800px',
+        height:'400px',
+        disableClose: true,
+        panelClass: 'myapp-no-padding-dialog'
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
+
+  openDialog4() {
+    const dialogRef = this.dialog.open(PopupModemComponent,{
+        width: '800px',
+        height:'400px',
         disableClose: true,
         panelClass: 'myapp-no-padding-dialog'
     });

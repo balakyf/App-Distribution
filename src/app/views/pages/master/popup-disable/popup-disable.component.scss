@@ -5,7 +5,7 @@
     height: 100%;
   }
   .helppan{
-    background: rgb(188, 215, 240);
+    background: rgb(216, 218, 218);
     height: 100%;
   }
   
@@ -63,13 +63,10 @@
   }
   .action{
     padding: 2px;
-    padding-top: 20px;
+    padding-top: 50px;
     display: flex;
-    justify-content: flex-end;
-    display: flex;
-    margin-top:auto;
-    align-items: flex-end;
-    align-self: flex-end;
+    justify-content: space-around;
+    text-align: center;
   }
   .action-button{
     margin: 10px;

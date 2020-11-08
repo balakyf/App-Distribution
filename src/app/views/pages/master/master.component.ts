@@ -22,7 +22,7 @@ const ELEMENT_DATA: PeriodicElement[] = [];
   styleUrls: ['./master.component.scss']
 })
 export class MasterComponent implements OnInit {
-  displayedColumns: string[] = ['position', 'nom', 'numero', 'modem'];
+  displayedColumns: string[] = ['position', 'nom', 'numero', 'modem', 'action'];
   dataSource = ELEMENT_DATA;
 
   constructor(public dialog: MatDialog) { }
